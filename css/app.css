@@ -1589,7 +1589,10 @@ textarea
 	font-style: 500;
 	font-weight: 500;
 	src: url(../font/delicious.eot);
-	src: url(../font/delicious.eot?#iefix) format('embedded-opentype'),url(../font/delicious.woff) format('woff'),url(../font/delicious.ttf) format('truetype'),url(../font/delicious.svg) format('svg');
+	src: url(../font/delicious.eot?#iefix) format('embedded-opentype'),
+	url(../font/delicious.woff) format('woff'),
+	url(../font/delicious.ttf) format('truetype'),
+	url(../font/delicious.svg) format('svg');
 }
 [data-icon]:before
 {

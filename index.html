@@ -36,7 +36,7 @@
   <script type="text/javascript">
     require('initialize');
 
-    
+
     (function() {
       var hosts = [
       "https://delicious.com",
@@ -62,8 +62,9 @@
         e.setAttribute("src",
          (("https:" == document.location.protocol) ?
            "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" :
-           "http://static.chartbeat.com/") +
-         "js/chartbeat.js");
+           
+           "http://static2.chartbeat.com/") +
+         "js/chartbeat_pubdev.js");
         document.body.appendChild(e);
       }
       var oldonload = window.onload;

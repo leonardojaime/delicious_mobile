@@ -9304,7 +9304,8 @@ function () {
                 }, n.prototype.checkForMeiWeiPromo = function () {
                     var t = this;
                     return $.ajax({
-                        url: "//avosapi.delicious.com/api/v1/public/headers"
+                        // url: "//avosapi.delicious.com/api/v1/public/headers"
+                        url: "http://avosapi.delicious.com/api/v1/public/headers"
                     }).done(function (e) {
                         var n, r;
                         return n = e.pkg["Accept-Language"], -1 === n.search(/zh/) || store.get("closedNotification-info-xPromoForMeiweisq") ? void 0 : (r = new i({
