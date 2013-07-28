@@ -1,76 +1,13 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
+  <head>
+    <title></title>
+    <meta content="">
+    <style></style>
+  </head>
+  <body>
+<img src="http://delicious.com/img/logo.png" height="16" width="16" alt="Delicious" />
 
-  <meta name="description" content="Keep, share, and discover the best of the Web using Delicious, the world&#039;s leading social bookmarking service.">
-  <meta name="keywords" content="del.icio.us, delicious, bookmarks, bookmark, social bookmarking, links, link, stacks, stack">
+  <a href="#" onclick="window.open('http://delicious.com/save?v=5&provider={your-company}&noui&jump=close&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"> Save this on Delicious</a>
 
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-
-  <meta name="apple-itunes-app" content="app-id=580295142">
-
-  <meta name="google-translate-customization" content="b53f234b743b95-c8f355224da13d70-g201b8e289f4c34a6-d"></meta>
-
-  <title>Delicious</title>
-
-  
-  <link rel="stylesheet" type="text/css" href="css/app.css">
-  
-
-  <link rel="shortcut icon" href="/favicon.ico">
-  <script type="text/javascript" src="js/modernizr.js"></script>
-  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-</head>
-<body>
-  <div id="delicious"></div>
-
-  <script src="js/jquery.min.js"></script>
-  <script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="' + '/js/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
-  <script src="js/raven.min.js"></script>
-
-
-  <script type="text/javascript" src="js/app.js"></script>
-
-
-  <script type="text/javascript">
-    require('initialize');
-
-
-    (function() {
-      var hosts = [
-      "https://delicious.com",
-      "https://release.delicious.com",
-      "http://release.delicious.com",
-      "http://alpha.delicious.com"
-      ];
-
-      if(hosts.indexOf(window.location.origin) != -1) {
-        Raven.config('https://8592bbebebb8415facaa2b192871c2a1@app.getsentry.com/3302', {sourceMaps: true}).install();
-      }
-    })();
-
-    var _sf_async_config={};
-    _sf_async_config.uid = 29415;
-    _sf_async_config.domain = "delicious.com";
-    (function(){
-      function loadChartbeat() {
-        window._sf_endpt=(new Date()).getTime();
-        var e = document.createElement("script");
-        e.setAttribute("language", "javascript");
-        e.setAttribute("type", "text/javascript");
-        e.setAttribute("src",
-         (("https:" == document.location.protocol) ?
-           "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" :
-           
-           "http://static2.chartbeat.com/") +
-         "js/chartbeat_pubdev.js");
-        document.body.appendChild(e);
-      }
-      var oldonload = window.onload;
-      window.onload = (typeof window.onload != "function") ?
-      loadChartbeat : function() { oldonload(); loadChartbeat(); };
-    })();
-  </script>
-</body>
+  </body>
 </html>
